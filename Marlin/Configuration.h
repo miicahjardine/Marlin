@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(thisiskeithb, Ender-3)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(micahjj, CR10-12V)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -145,7 +145,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "CR-10 2.0.8.2"
+#define CUSTOM_MACHINE_NAME "CR-10 2.0.8.2-ST12V"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -757,7 +757,7 @@
 //#define Z2_DRIVER_TYPE A4988
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
-#define E0_DRIVER_TYPE TMC2209
+#define E0_DRIVER_TYPE  TMC2209
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -1247,7 +1247,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 250
+#define Z_MAX_POS 400
 
 /**
  * Software Endstops
