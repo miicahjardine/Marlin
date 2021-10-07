@@ -104,7 +104,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT -1
+#define SERIAL_PORT 2
 
 /**
  * Serial Port Baud Rate
@@ -125,7 +125,7 @@
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 0
+#define SERIAL_PORT_2 -1
 //#define BAUDRATE_2 250000   // Enable to override BAUDRATE
 
 /**
@@ -145,7 +145,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "CR-10-4"
+#define CUSTOM_MACHINE_NAME "CR-10-5"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1031,7 +1031,7 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
 //#define USE_PROBE_FOR_Z_HOMING
@@ -1317,7 +1317,7 @@
 // @section extruder
 
 #define DISABLE_E false             // Disable the extruder when not stepping
-//#define DISABLE_INACTIVE_EXTRUDER   // Keep only the active extruder enabled
+#define DISABLE_INACTIVE_EXTRUDER   // Keep only the active extruder enabled
 
 // @section machine
 
